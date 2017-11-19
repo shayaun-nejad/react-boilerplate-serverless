@@ -95,6 +95,10 @@ There’s also a <a href="https://vimeo.com/168648012">fantastic video</a> on ho
 
 <sub><i>Keywords: React.js, Redux, Hot Reloading, ESNext, Babel, react-router, Offline First, ServiceWorker, `styled-components`, redux-saga, FontFaceObserver</i></sub>
 
+## Serverless support
+
+This fork contains support for serverless deployments using serverless on services like AWS lambda. To make use of a serverless deployment, specify `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` and use `npm run serverless-deploy -- --stage stagename`. An S3 bucket and cloudformation infrastructure will be created for you automatically. Note that you will need to manually add binary content-types to the created API Gateway and compression is disabled.
+
 ## Quick start
 
 1. Clone this repo using `git clone --depth=1 https://github.com/react-boilerplate/react-boilerplate.git`
